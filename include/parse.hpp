@@ -17,6 +17,7 @@ public:
     Object parse_string();
 
     void skip_comment();
+    bool is_esc_consum(size_t pos);
 private:
     string m_str;
     ssize_t m_idx{}; //遍历索引
